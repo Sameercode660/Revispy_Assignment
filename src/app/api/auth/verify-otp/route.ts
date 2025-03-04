@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       statusCode: 200,
-      message: "Unable to resolve the verify otp",
+      message: `Unable to resolve the verify otp ${error}`,
       status: false,
     });
   }

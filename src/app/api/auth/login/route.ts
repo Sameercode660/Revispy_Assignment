@@ -43,6 +43,6 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({statusCode: 200, message: 'Succesfully loggedIn', response: checkUser, status: true})
 
     } catch (error) {
-        return NextResponse.json({statusCode: 500,  message: 'Unable to resolve the Login', status: false})
+        return NextResponse.json({statusCode: 500,  message: `Unable to resolve the Login: ${error}`, status: false})
     }
 }

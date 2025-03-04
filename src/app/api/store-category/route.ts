@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({
       statusCode: 500,
-      messag: "Unable to store the categories in user",
+      messag: `Unable to store the categories in user ${error}`,
       status: false,
     });
   }

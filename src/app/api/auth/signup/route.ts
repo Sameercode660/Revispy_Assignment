@@ -76,7 +76,7 @@ export async function POST(req: NextRequest) {
     
     return NextResponse.json({
       statusCode: 500,
-      message: "Unable to resolve the signup",
+      message: `Unable to resolve the signup ${error}`,
       status: false,
     });
   }
